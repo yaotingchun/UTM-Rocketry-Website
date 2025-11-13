@@ -1,1 +1,1 @@
-# UTM-Rocketry-Website
+# UTM Rocketry Website
