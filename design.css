@@ -16,6 +16,7 @@ body {
     min-height: 100vh; /* Ensure body is at least full viewport height */
     display: flow-root;
     }
+    
 header {
         position: fixed;
         top: 0;
