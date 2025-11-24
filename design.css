@@ -108,6 +108,31 @@ header {
     width: 100%;
 }
 
+#current{
+    color: hsl(0, 3%, 70%);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+#current::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%; /* Center the starting point */
+    transform: translateX(-50%); /* Center the element */
+    width: 0;
+    height: 2px;
+    background: hsl(0, 3%, 70%);
+    transition: width 0.4s ease;
+}
+
+#current:hover::after{
+    width: 100%;
+}
+
 .navbar ul li{
     position: relative;
 }
