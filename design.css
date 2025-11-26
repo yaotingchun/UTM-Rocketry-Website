@@ -25,12 +25,6 @@ header {
         z-index: 1000;
     }
 
-.content-wrapper {
-    flex: 1;
-    padding-top: 52vh; /* Space for fixed header */
-    padding-bottom: 2rem; /* Optional spacing before footer */
-}
-
 .navbar{
     background-color: hsla(253, 100%, 3%, 50%);
 }

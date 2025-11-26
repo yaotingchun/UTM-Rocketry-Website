@@ -59,21 +59,372 @@
         </nav>
         </header>
 
-        <div class = "content">
-        <h1> HIHI </h1>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="container">
+        <!-- Gallery Section -->
+        <div class="gallery-section">
+            <div class="gallery-slide active">
+                <img src="img/About1.jpeg" alt="Rocket Team">
+                <div class="gallery-overlay">
+                    <h1>UTM Rocketry</h1>
+                    <p>United by Passion, Driven by Innovation</p>
+                </div>
+            </div>
+            <div class="gallery-slide">
+                <img src="img/About2.jpeg" alt="Rocket Launch">
+                <div class="gallery-overlay">
+                    <h1>UTM Rocketry</h1>
+                    <p>United by Passion, Driven by Innovation</p>
+                </div>
+            </div>
+            <div class="gallery-slide">
+                <img src="img/About3.jpeg" alt="Team Working">
+                <div class="gallery-overlay">
+                    <h1>UTM Rocketry</h1>
+                    <p>United by Passion, Driven by Innovation</p>
+                </div>
+            </div>
+            <div class="gallery-indicators">
+                <div class="indicator active" data-slide="0"></div>
+                <div class="indicator" data-slide="1"></div>
+                <div class="indicator" data-slide="2"></div>
+            </div>
         </div>
-        
-        <!--
-        <div class="content-wrapper">
-            <h1>Your Content</h1>
-            <p>This is your main content...</p>
+<<<<<<< HEAD
+
+        <!-- About Section -->
+        <div class="about-section">
+            <h2>About Us</h2>
+            <p>The <b>UTM Rocketry Team</b> is a student-led group from <b>Universiti Teknologi Malaysia (UTM)</b> that focuses on designing, building, and launching high-powered rockets for the International Rocket Engineering Competition.</p>
+            <p>Comprising students from various engineering backgrounds, the team applies theoretical knowledge to practical aerospace projects involving propulsion, aerodynamics, structural design, and electronics.</p>
+            <p>Through participation in IREC 2025, the team showcases UTM's innovation and technical excellence while promoting interest in STEM and space technology across Malaysia.</p>
         </div>
-        -->
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-content">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">Successful Launches</div>
+                </div>
+                <div class="stat-icon">🚀</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-content">
+                    <div class="stat-number" data-target="9326" data-suffix="ft">0</div>
+                    <div class="stat-label">Recorded Altitude</div>
+                </div>
+                <div class="stat-icon">☁️</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-content">
+                    <div class="stat-number" data-target="90">0</div>
+                    <div class="stat-label">Team Members</div>
+                </div>
+                <div class="stat-icon">👥</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-content">
+                    <div class="stat-number" data-target="1" data-suffix="+">0</div>
+                    <div class="stat-label">Year Active</div>
+                </div>
+                <div class="stat-icon">⏱️</div>
+            </div>
+        </div>
+
+        <br>
+        <!-- Achievements Section -->
+        <div class="achievements-section">
+            <h2>Key Achievements</h2>
+            
+            <div class="achievement-content">
+                <div class="achievement-card">
+                    <h3>International Rocket Engineering Competition (IREC)</h3>
+                    <p>A proud moment as twelve exceptional students from Universiti Teknologi Malaysia (UTM) represent the nation at the International Rocket Engineering Competition (IREC) 2025 in Texas, USA. As the only team from Malaysia among 176 elite teams worldwide, they perfectly embody the country's engineering talent, innovation, and determination on a truly global stage.</p>
+                </div>
+                <div class="achievement-card">
+                    <p>This success makes UTM the first team from Malaysia to qualify for the final stage of the prestigious competition organized by the Tripoli Rocketry Association which is often referred to as the "World Cup of rocketry" in 2025. It has marked the country's strides across the world in the field of rocket engineering, making new nation history by using ammonium perchlorate as the main propulsion system to reach the target altitude of 3,000 metres in Texas airspace.</p>
+                </div>
+            </div>
+            
+            <div class="achievement-image">
+                <img src="img/Achievement1_2.jpeg" alt="RIMAU-1 ready at rocket launch site in conjunction with IREC 2025">
+                <div class="achievement-caption">
+                    RIMAU-1 ready at rocket launch site in conjunction with IREC 2025
+                </div>
+            </div>
+        </div>
+        <div class="testimonials-section">
+            <h2>What They Say About Us</h2>
+            
+            <div class="testimonials-carousel">
+                <button class="carousel-btn prev" onclick="moveSlide(-1)">‹</button>
+                <button class="carousel-btn next" onclick="moveSlide(1)">›</button>
+                
+                <div class="testimonials-track" id="track">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon">"</div>
+                            <div class="testimonial-content">
+                                <p class="testimonial-text">
+                                    Representing Malaysia at IREC is not just about competition—it's about pushing boundaries and proving that Malaysian students can excel on the global stage. This team embodies the spirit of innovation and excellence that UTM stands for.
+                                    Representing Malaysia at IREC is not just about competition—it's about pushing boundaries and proving that Malaysian students can excel on the global stage. 
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-info">
+                                        <div class="author-name">Dr. Norazila</div>
+                                        <div class="author-role">UTM Rocketry Advisor</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon">"</div>
+                            <div class="testimonial-content">
+                                <p class="testimonial-text">
+                                    Joining UTM Rocketry was the best decision of my university life. I've learned more practical engineering in one year here than in all my coursework combined. The hands-on experience is invaluable.
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-info">
+                                        <div class="author-name">Dr. Faruq</div>
+                                        <div class="author-role">UTM Rocketry Advisor</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon">"</div>
+                            <div class="testimonial-content">
+                                <p class="testimonial-text">
+                                    The team's dedication and technical prowess are remarkable. Watching these students tackle complex aerospace challenges with such passion gives me confidence in Malaysia's engineering future.
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-info">
+                                        <div class="author-name">Dr. Mastura</div>
+                                        <div class="author-role">UTM Rocketry Advisor</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon">"</div>
+                            <div class="testimonial-content">
+                                <p class="testimonial-text">
+                                    Working on RIMAU-1 taught me that failure is just part of the process. Every test, every calculation, every setback made us stronger. Now we're ready to show the world what we can do.
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-info">
+                                        <div class="author-name">Julian Chee</div>
+                                        <div class="author-role">UTM Rocketry Mentor</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon">"</div>
+                            <div class="testimonial-content">
+                                <p class="testimonial-text">
+                                    As an industry partner, we're impressed by the professionalism and technical competence of the UTM Rocketry Team. These students are the future of Malaysia's aerospace sector.
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-info">
+                                        <div class="author-name">Li Bin</div>
+                                        <div class="author-role">UTM Rocketry Director</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-dots" id="dots"></div>
+            </div>
+        </div>
+
+        </div>
+
+        <script>
+        // Gallery Auto-play
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.gallery-slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(ind => ind.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            indicators[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        // Auto-play every 4 seconds
+        setInterval(nextSlide, 4000);
+
+        // Manual control
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+
+        // Animated Counter
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-target'));
+            const suffix = element.getAttribute('data-suffix') || '';
+            const duration = 2000;
+            const increment = target / (duration / 16);
+            let current = 0;
+
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target + suffix;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current) + suffix;
+                }
+            }, 16);
+        }
+
+        // Intersection Observer for counter animation
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.stat-number');
+                    counters.forEach(counter => {
+                        if (counter.textContent === '0' || counter.textContent === '0+' || counter.textContent === '0km') {
+                            animateCounter(counter);
+                        }
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe stats grid
+        const statsGrid = document.querySelector('.stats-grid');
+        observer.observe(statsGrid);
+
+        let currentIndex = 0;
+        let slidesPerView = getSlidesPerView();
+        const track = document.getElementById('track');
+        const tslides = document.querySelectorAll('.testimonial-slide');
+        const ttotalSlides = tslides.length;
+        let autoSlideInterval;
+
+        function getSlidesPerView() {
+            return 1; 
+        }
+
+        function createDots() {
+            const dotsContainer = document.getElementById('dots');
+            dotsContainer.innerHTML = '';
+            const maxIndex = Math.max(0, ttotalSlides - slidesPerView);
+            
+            for (let i = 0; i <= maxIndex; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'dot';
+                if (i === 0) dot.classList.add('active');
+                dot.onclick = () => goToSlide(i);
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        function updateDots() {
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        function updateSlidePosition() {
+            const carouselWidth = document.querySelector('.testimonials-carousel').offsetWidth - 120; // Subtract padding
+            const offset = -(currentIndex * carouselWidth);
+            track.style.transform = `translateX(${offset}px)`;
+            updateDots();
+        }
+
+        function moveSlide(direction) {
+            const maxIndex = Math.max(0, ttotalSlides - slidesPerView);
+            currentIndex += direction;
+            
+            if (currentIndex > maxIndex) {
+                currentIndex = 0;
+            } else if (currentIndex < 0) {
+                currentIndex = maxIndex;
+            }
+            
+            updateSlidePosition();
+            resetAutoSlide();
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateSlidePosition();
+            resetAutoSlide();
+        }
+
+        function autoSlide() {
+            moveSlide(1);
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(autoSlide, 5000); // Auto-advance every 5 seconds
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        window.addEventListener('resize', () => {
+            const newSlidesPerView = getSlidesPerView();
+            if (newSlidesPerView !== slidesPerView) {
+                slidesPerView = newSlidesPerView;
+                const maxIndex = Math.max(0, ttotalSlides - slidesPerView);
+                if (currentIndex > maxIndex) {
+                    currentIndex = maxIndex;
+                }
+                createDots();
+                updateSlidePosition();
+            }
+        });
+
+        // Pause auto-slide on hover
+        const carousel = document.querySelector('.testimonials-carousel');
+        carousel.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+        carousel.addEventListener('mouseleave', startAutoSlide);
+
+        // Initialize
+        createDots();
+        updateSlidePosition();
+        startAutoSlide();
+        </script>
+=======
+>>>>>>> 34f5abd1dff43efa0502545e4beb3db04d6a043a
 
         <div class="footer-container">
         <div class="footer">
