@@ -126,6 +126,17 @@
                 
                 container.appendChild(timelineItem);
             });
+            const startItem = document.createElement('div');
+            startItem.className = 'timeline-item start-point';
+            startItem.innerHTML = `
+                <div class="timeline-date"></div>
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                </div>
+                <div class="timeline-content"></div>
+            `;
+            container.appendChild(startItem);
         }
 
         function toggleDescription(index) {

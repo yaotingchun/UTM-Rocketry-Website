@@ -42,6 +42,27 @@
             margin-top: 5px;
         }
 
+        .timeline-item.start-point .timeline-line {
+            display: block;
+            height: 50px;
+        }
+
+        .timeline-item.start-point .timeline-content {
+            display: none;
+        }
+
+        .timeline-item.start-point .timeline-dot {
+            display: none;
+        }
+
+        .timeline-item.start-point .timeline-date {
+            display: none;
+        }
+
+        .timeline-item.start-point {
+            margin-bottom: 0;
+        }
+
         .timeline-item:last-child .timeline-line {
             display: none;
         }
