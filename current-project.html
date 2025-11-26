@@ -2,7 +2,7 @@
 
 <html lang="en">
     <head>
-        <title>UTM Rocketry - Aetherion</title>
+        <title>UTM Rocketry</title>
         <meta charset = "UTF-8">
         <meta name = "description" content = "UTM Rocketry">
         <meta name = "keywords" content = "UTM, Rocketry, rocket">
@@ -10,6 +10,7 @@
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
         <meta http-equiv = "refresh" content = "30000"> <!--if dont want refresh can just delete-->
         <link rel="stylesheet" href="design.css">
+        <link rel="stylesheet" href="current-project.css">
         <link rel="icon" href="img/UTM rocketry logo.png" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
@@ -57,23 +58,93 @@
         </div>
         </nav>
         </header>
+        <br><br><br><br>
+        <div class="timeline-container" id="timeline"></div>
 
-        <div class = "content">
-        <h1> HIHI </h1>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </div>
+    <script>
+        const timelineData = [
+            {
+                date: "Jun 2026",
+                title: "Launching Testing",
+                description: "Our team has successfully conducted a test of the rocket. During the testing, we carefully observed its performance and stability. The rocket launched smoothly and maintained a steady flight path without any major issues. Its structure and balance were stable, showing that the design and construction were done well.",
+                image: "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=600&h=400&fit=crop"
+            },
+            {
+                date: "Mar 2026",
+                title: "Launching Testing",
+                description: "Our team has successfully conducted a test of the rocket. During the testing, we carefully observed its performance and stability. The rocket launched smoothly and maintained a steady flight path without any major issues. Its structure and balance were stable, showing that the design and construction were done well.",
+                image: "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?w=600&h=400&fit=crop"
+            },
+            {
+                date: "Feb 2026",
+                title: "Launching Testing",
+                description: "Our team has successfully conducted a test of the rocket. During the testing, we carefully observed its performance and stability. The rocket launched smoothly and maintained a steady flight path without any major issues. Its structure and balance were stable, showing that the design and construction were done well.",
+                image: "https://images.unsplash.com/photo-1581822261290-991b38693d1b?w=600&h=400&fit=crop"
+            },
+            {
+                date: "Jan 2026",
+                title: "Launching Testing",
+                description: "Our team has successfully conducted a test of the rocket. During the testing, we carefully observed its performance and stability. The rocket launched smoothly and maintained a steady flight path without any major issues. Its structure and balance were stable, showing that the design and construction were done well.",
+                image: "https://images.unsplash.com/photo-1457364887197-9150188c107b?w=600&h=400&fit=crop"
+            },
+        ];
 
-        <!--
-        <div class="content-wrapper">
-            <h1>Your Content</h1>
-            <p>This is your main content...</p>
-        </div>
-        -->
-        
+        const MAX_DESCRIPTION_HEIGHT = 100; // pixels
+
+        function createTimeline() {
+            const container = document.getElementById('timeline');
+            
+            timelineData.forEach((item, index) => {
+                const timelineItem = document.createElement('div');
+                timelineItem.className = 'timeline-item';
+                
+                // Check if description needs truncation
+                const tempDiv = document.createElement('div');
+                tempDiv.style.cssText = 'position:absolute; visibility:hidden; width:600px; font-size:14px; line-height:1.6;';
+                tempDiv.textContent = item.description;
+                document.body.appendChild(tempDiv);
+                const needsTruncation = tempDiv.offsetHeight > MAX_DESCRIPTION_HEIGHT;
+                document.body.removeChild(tempDiv);
+                
+                timelineItem.innerHTML = `
+                    <div class="timeline-date">${item.date}</div>
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <img src="${item.image}" alt="${item.title}" class="timeline-image">
+                        <div class="timeline-text">
+                            <h3 class="timeline-title">${item.title}</h3>
+                            <div class="timeline-description" id="desc-${index}">
+                                ${item.description}
+                            </div>
+                            ${needsTruncation ? `<span class="read-more" onclick="toggleDescription(${index})">Read more...</span>` : ''}
+                        </div>
+                    </div>
+                `;
+                
+                container.appendChild(timelineItem);
+            });
+        }
+
+        function toggleDescription(index) {
+            const desc = document.getElementById(`desc-${index}`);
+            const readMore = desc.nextElementSibling;
+            
+            if (desc.classList.contains('expanded')) {
+                desc.classList.remove('expanded');
+                readMore.textContent = 'Read more...';
+            } else {
+                desc.classList.add('expanded');
+                readMore.textContent = 'Read less';
+            }
+        }
+
+        // Initialize timeline
+        createTimeline();
+    </script>
+
         <div class="footer-container">
         <div class="footer">
             <div class="footer-heading footer-1">
