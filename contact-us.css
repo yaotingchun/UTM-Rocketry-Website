@@ -1,0 +1,110 @@
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.contact-header p {
+    font-size: 1.1rem;
+    color: #f8f8f8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(240px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+/* Tablet */ 
+@media (max-width: 1024px) {
+    .contact-cards-grid {
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+    }
+}
+
+/* Mobile */ 
+@media (max-width: 560px) {
+    .contact-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    object-fit: cover;
+    display: block;
+}
+
+.contact-card h3 {
+    font-size: 1.3rem;
+    color: #6e7cfb;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.contact-card .role {
+    font-size: 0.95rem;
+    color: #667eea;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contact-info {
+    background: rgba(102, 126, 234, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.contact-info i {
+    color: #667eea;
+    font-size: 1.1rem;
+}
+
+.contact-info a {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    color: #6e7cfb;
+    text-decoration: underline;
+}
