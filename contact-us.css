@@ -1,143 +1,110 @@
-<!DOCTYPE html>
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
 
-<html lang="en">
-    <head>
-        <title>UTM Rocketry - Contact Us</title>
-        <meta charset = "UTF-8">
-        <meta name = "description" content = "UTM Rocketry">
-        <meta name = "keywords" content = "UTM, Rocketry, rocket">
-        <meta name = "author" content = "UTM Rocketry Team">
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-        <meta http-equiv = "refresh" content = "30000"> <!--if dont want refresh can just delete-->
-        <link rel="stylesheet" href="design.css">
-        <link rel="stylesheet" href="contact-us.css">
-        <link rel="icon" href="img/UTM rocketry logo.png" >
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    
-    <body>
-        <header> 
-        <nav class="navbar">
-        <div class="container-fluid">
-            <a href="index.html" class="brand">
-            <img src="img/UTM rocketry logo.png" alt="UTM Rocketry Logo" class="logo">
-            <span style="font-family: 'Fira Code', monospace;">UTM ROCKETRY</span>
-        </a>
-            <div>
-            <ul>
-                <li>
-                <a href="index.html">About</a>
-                </li>
+.contact-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
 
-                <li>
-                <a href="our-team.html">Our Team</a>
-                </li>
-                
-                <li>
-                <a href="current-project.html">Current Project</a>
-                </li>
+.contact-header h1 {
+    font-size: 2.5rem;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
 
-                <li>
-                <a href="past-project.html">Past Project</a>
-                </li>
+.contact-header p {
+    font-size: 1.1rem;
+    color: #f8f8f8;
+    max-width: 600px;
+    margin: 0 auto;
+}
 
-                <li class="dropdown">
-                <a href="sponsors.html">Sponsors</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Our Sponsors</a>
-                    <a class="dropdown-item" href="">Become a Sponsor</a>
-                    <a class="dropdown-item" href="">Become a Donor</a>
-                </div>
-                </li>
+.contact-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(240px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
 
-                <li>
-                <a href="contact-us.html" id="current">Contact Us</a>
-                </li>
-            </ul>
-            </div>
-        </div>
-        </nav>
-        </header>
-        
-    <div class="contact-container">
-        <div class="contact-header">
-           <h1>Communicate With Us</h1>
-           <p>Any questions or want to collaborate? Reach out to our director or team leaders directly or connect with us through the social media!</p>
-        </div>
+/* Tablet */ 
+@media (max-width: 1024px) {
+    .contact-cards-grid {
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+    }
+}
 
-        <div class="contact-cards-grid">
-            <div class="contact-card">
-                <img src="img/Libin's pic.jpg" class="contact-card-image" alt="Ong Li Bin">
-                <h3>Ong Li Bin</h3>
-                <p class="role">Director</p>
-                <div class="contact-info">
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:+60182980625">+60 18-298 0625</a>
-                </div>
-            </div>
+/* Mobile */ 
+@media (max-width: 560px) {
+    .contact-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
-            <div class="contact-card">
-                <img src="img/Junxiang's pic.jpg" class="contact-card-image" alt="Ong Li Bin">
-                <h3>Cho Jun Xiang</h3>
-                <p class="role">Team Leader</p>
-                <div class="contact-info">
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:+60138336993">+60 13-833 6993</a>
-                </div>
-            </div>
+.contact-card {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
 
-            <div class="contact-card">
-                <img src="img/Shoban's pic.jpg" class="contact-card-image" alt="Shoban A/L Kumaran">
-                <h3>Shoban A/L Kumaran</h3>
-                <p class="role">Deputy Team Leader</p>
-                <div class="contact-info">
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:+60128011435">+60 12-801 1435</a>
-                </div>
-            </div>
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
 
-            <div class="contact-card">
-                <img src="img/Sufyan's pic.jpg" class="contact-card-image" alt="Sufyan Muhammad Yunus Jaunbocus">
-                <h3>Sufyan Muhammad Yunus Jaunbocus</h3>
-                <p class="role">Project Manager</p>
-                <div class="contact-info">
-                    <i class="fa-solid fa-phone"></i>
-                <a href="tel:+60182368524">+60 18-236 8524</a>
-                </div>
-            </div>
-        </div>
-    </div>
+.contact-card-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    object-fit: cover;
+    display: block;
+}
 
-        <!--
-        <div class="content-wrapper">
-            <h1>Your Content</h1>
-            <p>This is your main content...</p>
-        </div>
-        -->
-        
-        <div class="footer-container">
-        <div class="footer">
-            <div class="footer-heading footer-1">
-                <h4>Quick Links</h4><br>
-                <a href="index.html" style="font-size: 13px;">About</a>
-                <a href="our-team.html" style="font-size: 13px;">Our Team</a>
-                <a href="past-project.html" style="font-size: 13px;">Past Projects</a>
-                <a href="current-project.html" style="font-size: 13px;">Current Projects</a>
-            </div>
-            <div class="footer-heading footer-2">
-                <h4>Sponsors</h4><br>
-                <a href="sponsors.html" style="font-size: 13px;">Our Sponsors</a>
-                <a href="sponsors.html" style="font-size: 13px;">Become a Sponsor</a>
-                <a href="sponsors.html" style="font-size: 13px;">Become a Donor</a>
-            </div>
-            <div class="footer-heading footer-3">
-                <h4 style="font-size: 16px;">Follow Us</h4><br>
-                <a href="https://www.instagram.com/utmrocketry/" target="_blank" style="font-size: 13px;" > <i class="fa-brands fa-instagram"></i> Instagram</a> 
-                <a href="https://www.facebook.com/profile.php?id=61582661865031" target="_blank" style="font-size: 13px;"> <i class="fa-brands fa-facebook"></i> Facebook</a> 
-                <a href="mailto:utmrocketry@gmail.com" target="_blank" style="font-size: 13px;"> <i class="fa-solid fa-envelope"></i> Gmail</a>
-                <a href="https://www.linkedin.com/company/utm-rocketry-team/" target="_blank" style="font-size: 13px;"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            </div>
-        </div>
-    </div>
-    </body>
-</html>
+.contact-card h3 {
+    font-size: 1.3rem;
+    color: #6e7cfb;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.contact-card .role {
+    font-size: 0.95rem;
+    color: #667eea;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contact-info {
+    background: rgba(102, 126, 234, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.contact-info i {
+    color: #667eea;
+    font-size: 1.1rem;
+}
+
+.contact-info a {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    color: #6e7cfb;
+    text-decoration: underline;
+}
