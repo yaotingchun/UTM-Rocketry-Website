@@ -76,12 +76,11 @@
 
 .sponsor-card
 {
-    background :linear-gradient(135deg, rgba(150, 150, 170, 0.9), rgba(120, 120, 140, 0.9));
+    background :linear-gradient(135deg, rgba(150, 150, 170, 0.1), rgba(120, 120, 140, 0.1));
     border-radius :15px;
     padding : 30px 25px;
     text-align :center;
     transition :transform 0.3s ease, box-shadow 0.3s ease;
-    backdrop-filter :blur(10px);
     box-shadow :0 4px 15px rgba(0, 0, 0, 0.3);
     min-height :280px;
     display :flex;
